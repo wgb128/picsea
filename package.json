@@ -4,7 +4,7 @@
   "description": "爬取以下60多个免费正版图片站的内容：",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "mongo": "mongod --dbpath db"
   },
   "repository": {
     "type": "git",
