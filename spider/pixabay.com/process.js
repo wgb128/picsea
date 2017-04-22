@@ -11,6 +11,9 @@
 输出：
 每条数据包含的字段：url、宽、高、tags数组
 
+目前出现的问题：
+偶尔出现的read ECONNRESET错误，暂时无法解决
+
 */
 var pictureDAO = require('../../protect/models/picture');
 var cheerio = require('cheerio');
