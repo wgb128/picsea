@@ -6,7 +6,174 @@
 	<link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-	
+<!-- 页眉 -->
+<div class="Head Minwidth">
+	<div class="HeadTop"></div>
+	<div class="HeadTitle mwidth">
+		<div class="fl logo" title="picsea"></div>
+		<ul class=" fr nav">
+			<li><a href="#">关于我们</a></li>
+		</ul>
+	</div>
+</div>
+
+<!--全屏图--> 
+<div class="banner Minwidth">
+	<div class="mwidth"><p>以用途为中心的无版权图片聚合站</p></div>
+</div>
+
+<!--选择-->
+<div class="Choose Minwidth">
+	<form class="mwidth">
+		<div class="ChooseHead">
+			<div>公众号题图</div>
+			<div class="on">头像</div>
+		</div>
+		<div class="ChooseType ChooseList">
+			<div class="ChooseType-sel">
+				<span>领域</span>
+				<div class="ChooseSel ChooseSeltype">
+					<p><span>人文景观</span><i></i></p>
+					<select class="opacity0 seltype">
+						<option>人文景观</option>
+						<option>地理风景</option>
+					</select>
+				</div>
+				<script type="text/javascript">
+					// $(".seltype").on("change",function(){
+					// 	$(".ChooseSeltype span").text($(this).children('option:selected').text());
+					// });
+				</script>
+			</div>
+			<div class="ChooseBto">实物</div>
+			<div class="ChooseBto">卡通</div>
+		</div>
+		<div class="ChooseStyle ChooseList">
+			<div class="ChooseType-sel">
+				<span>话题</span>
+				<div class="ChooseSel ChooseSelstyle">
+					<p><span>话题</span><i></i></p>
+					<select class="opacity0 selstyle">
+						<option>话题</option>
+						<option>话题1</option>
+						<option>话题2</option>
+					</select>
+				</div>
+				<script type="text/javascript">
+					// $(".selstyle").on("change",function(){
+					// 	$(".ChooseSelstyle span").text($(this).children('option:selected').text());
+					// });
+				</script>
+			</div>
+			<div class="ChooseBto">男</div>
+			<div class="ChooseBto">女</div>
+			<div class="ChooseBto">动物</div>
+		</div>
+	</form>
+</div>
+
+<!--主要图片-->
+<div class="ImagesList Minwidth">
+	<ul class="mwidth ImgListul">
+		<li>
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+			<div class="Hidebto">
+				<p>备选</p>
+				<p class="pbg">下载</p>
+			</div>
+		</li>
+		<li>
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+			<div class="Hidebto">
+				<p>备选</p>
+				<p class="pbg">下载</p>
+			</div>
+		</li>
+		<li>
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+			<div class="Hidebto">
+				<p>备选</p>
+				<p class="pbg">下载</p>
+			</div>
+		</li>
+		<li class="mrno">
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+			<div class="Hidebto">
+				<p>备选</p>
+				<p class="pbg">下载</p>
+			</div>
+		</li>
+		<li>
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+			<div class="Hidebto"  >
+				<p>备选</p>
+				<p class="pbg">下载</p>
+			</div>
+		</li>
+		<li>
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+			<div class="Hidebto" >
+				<p>备选</p>
+				<p class="pbg">下载</p>
+			</div>
+		</li>
+		<li>
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+			<div class="Hidebto" >
+				<p>备选</p>
+				<p class="pbg">下载</p>
+			</div>
+		</li>
+		<li class="mrno">
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+			<div class="Hidebto">
+				<p>备选</p>
+				<p class="pbg">下载</p>
+			</div>
+		</li>
+	</ul>
+	<button>加载中</button>
+</div>
+
+<!--今日推荐-->
+<div class="Recommend Minwidth">
+	<div class="name">今日推荐</div>
+	<ul class="mwidth RecImage">
+		<li>
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+		</li>
+		<li>
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+		</li>
+		<li  class="mrno">
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+		</li>
+		<li>
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+		</li>
+		<li>
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+		</li>
+		<li  class="mrno">
+			<div class="ImgList"><img src="../images/001.jpg"></div>
+		</li>
+	</ul>
+	<div class="mwidth">
+		<a href="#" class="RecMore fr">更多》</a>
+	</div>
+</div>
+<!--bottom-->
+<div class="About Minwidth"></div>
+<div class="Footer Minwidth"></div>
+
+<!--fix-->
+<div class="Fixed">
+	<a href="#">我选中的（N）</a>
+	<a href="#">切换瀑布流</a>
+	<a href="#">回到顶部</a>
+</div>
+
+<!--  -->
 	<script src="../js/common/jquery-1.10.2.min.js"></script>
 	<script src="../js/common/ejs.min.js"></script>
 	<script src="../js/common/util.js"></script>
