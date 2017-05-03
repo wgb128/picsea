@@ -16,7 +16,7 @@ var util = (function ($) {
         },
         success: function (res) {
           // Close loading animation
-          if (config.success) {
+          if (typeof config.success === 'function') {
             config.success(res)
           } else {
             // Do something...
@@ -24,7 +24,7 @@ var util = (function ($) {
         },
         error: function (err) {
           // Close loading animation
-          if (config.error) {
+          if (typeof config.error === 'function') {
             config.error(err)
           } else {
             // Do something...
