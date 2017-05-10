@@ -1,182 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>picsea-首页</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="../css/index.css">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<title>首页</title>
+<script src="../js/common/jquery-1.10.2.min.js"></script>
+<script src="../js/common/ejs.min.js"></script>
+<script src="../js/common/util.js"></script>
+<script src="../js/common/jquery.imgview.js"></script>
+<script src="../js/index.js"></script>
 </head>
+
 <body>
 <!-- 页眉 -->
-<div class="Head Minwidth">
-	<div class="HeadTop"></div>
-	<div class="HeadTitle mwidth">
+<div class="head minwidth">
+	<div class="head-top mwidth"></div>
+	<div class="head-title mwidth">
 		<div class="fl logo" title="picsea"></div>
-		<ul class=" fr nav">
+		<ul class="fr nav">
 			<li><a href="#">关于我们</a></li>
 		</ul>
 	</div>
 </div>
 
 <!--全屏图--> 
-<div class="banner Minwidth">
+<div class="banner minwidth">
 	<div class="mwidth"><p>以用途为中心的无版权图片聚合站</p></div>
 </div>
 
-<!--选择-->
-<div class="Choose Minwidth">
+<!-- 选择 -->
+<div class="choose minwidth">
 	<form class="mwidth">
-		<div class="ChooseHead">
-			<div>公众号题图</div>
-			<div class="on">头像</div>
+		<div class="chs-head">
+			<div class="select">公众号题图</div>
+			<div>头像</div>
 		</div>
-		<div class="ChooseType ChooseList">
-			<div class="ChooseType-sel">
+		<div class="chs-list chs-type show">
+			<div class="chs-field">
 				<span>领域</span>
-				<div class="ChooseSel ChooseSeltype">
+				<div class="chs-Sel">
 					<p><span>人文景观</span><i></i></p>
 					<select class="opacity0 seltype">
 						<option>人文景观</option>
 						<option>地理风景</option>
 					</select>
 				</div>
-				<script type="text/javascript">
-					// $(".seltype").on("change",function(){
-					// 	$(".ChooseSeltype span").text($(this).children('option:selected').text());
-					// });
-				</script>
 			</div>
-			<div class="ChooseBto">实物</div>
-			<div class="ChooseBto">卡通</div>
-		</div>
-		<div class="ChooseStyle ChooseList">
-			<div class="ChooseType-sel">
+			<div class="chs-topic">
 				<span>话题</span>
-				<div class="ChooseSel ChooseSelstyle">
-					<p><span>话题</span><i></i></p>
-					<select class="opacity0 selstyle">
-						<option>话题</option>
-						<option>话题1</option>
-						<option>话题2</option>
-					</select>
+				<div class="chs-Sel">
+					<p><input type="text" placeholder="话题"><i></i></p>
 				</div>
-				<script type="text/javascript">
-					// $(".selstyle").on("change",function(){
-					// 	$(".ChooseSelstyle span").text($(this).children('option:selected').text());
-					// });
-				</script>
 			</div>
-			<div class="ChooseBto">男</div>
-			<div class="ChooseBto">女</div>
-			<div class="ChooseBto">动物</div>
+		</div>
+		<div class="chs-list ">
+			<div class="chs-btos">
+				<div>实物</div>
+				<div>卡通</div>
+			</div>
+			<div class="chs-btos">
+				<div>男</div>
+				<div>女</div>
+				<div>动物</div>
+			</div>
 		</div>
 	</form>
 </div>
 
 <!--主要图片-->
-<div class="ImagesList Minwidth">
-	<ul class="mwidth ImgListul">
-		<li>
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-			<div class="Hidebto">
-				<p>备选</p>
-				<p class="pbg">下载</p>
-			</div>
-		</li>
-		<li>
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-			<div class="Hidebto">
-				<p>备选</p>
-				<p class="pbg">下载</p>
-			</div>
-		</li>
-		<li>
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-			<div class="Hidebto">
-				<p>备选</p>
-				<p class="pbg">下载</p>
-			</div>
-		</li>
-		<li class="mrno">
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-			<div class="Hidebto">
-				<p>备选</p>
-				<p class="pbg">下载</p>
-			</div>
-		</li>
-		<li>
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-			<div class="Hidebto"  >
-				<p>备选</p>
-				<p class="pbg">下载</p>
-			</div>
-		</li>
-		<li>
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-			<div class="Hidebto" >
-				<p>备选</p>
-				<p class="pbg">下载</p>
-			</div>
-		</li>
-		<li>
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-			<div class="Hidebto" >
-				<p>备选</p>
-				<p class="pbg">下载</p>
-			</div>
-		</li>
-		<li class="mrno">
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-			<div class="Hidebto">
-				<p>备选</p>
-				<p class="pbg">下载</p>
-			</div>
-		</li>
-	</ul>
-	<button>加载中</button>
+<div class="aboutimg minwidth">
+	<div class="mwidth">
+		<ul class="imglist">
+			<li>
+				<div class="pic"><p><img src="../images/001.jpg"></p></div>
+				<div class="hidebto">
+					<span class="bto-save">备选</span>
+					<span class="bto-down">下载</span>
+				</div>
+			</li>
+			<li>
+				<div class="pic"><p><img src="../images/001.jpg"></p></div>
+				<div class="hidebto">
+					<span class="bto-save">备选</span>
+					<span class="bto-down">下载</span>
+				</div>
+			</li>
+			<li>
+				<div class="pic"><p><img src="../images/jlogo.jpg"></p></div>
+				<div class="hidebto">
+					<span class="bto-save">备选</span>
+					<span class="bto-down">下载</span>
+				</div>
+			</li>
+			<li>
+				<div class="pic"><p><img src="../images/001.jpg"></p></div>
+				<div class="hidebto">
+					<span class="bto-save">备选</span>
+					<span class="bto-down">下载</span>
+				</div>
+			</li>
+			<li>
+				<div class="pic"><p><img src="../images/001.jpg"></p></div>
+				<div class="hidebto"  >
+					<span class="bto-save">备选</span>
+					<span class="bto-down">下载</span>
+				</div>
+			</li>
+			<li>
+				<div class="pic"><p><img src="../images/001.jpg"></p></div>
+				<div class="hidebto" >
+					<span class="bto-save">备选</span>
+					<span class="bto-down">下载</span>
+				</div>
+			</li>
+			<li>
+				<div class="pic"><p><img src="../images/001.jpg"></p></div>
+				<div class="hidebto" >
+					<span class="bto-save">备选</span>
+					<span class="bto-down">下载</span>
+				</div>
+			</li>
+			<li>
+				<div class="pic"><p><img src="../images/001.jpg"></p></div>
+				<div class="hidebto">
+					<span class="bto-save">备选</span>
+					<span class="bto-down">下载</span>
+				</div>
+			</li>
+		</ul>
+		<button>加载中</button>
+	</div>
 </div>
 
 <!--今日推荐-->
-<div class="Recommend Minwidth">
-	<div class="name">今日推荐</div>
-	<ul class="mwidth RecImage">
-		<li>
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-		</li>
-		<li>
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-		</li>
-		<li  class="mrno">
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-		</li>
-		<li>
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-		</li>
-		<li>
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-		</li>
-		<li  class="mrno">
-			<div class="ImgList"><img src="../images/001.jpg"></div>
-		</li>
-	</ul>
+<div class="recommend minwidth">
+	<div class="name">今日推荐<i></i></div>
 	<div class="mwidth">
-		<a href="#" class="RecMore fr">更多》</a>
+		<ul class="reclist">
+			<li>
+				<div class="rec-img"><p><img src="../images/001.jpg"></p></div>
+			</li>
+			<li>
+				<div class="rec-img"><p><img src="../images/001.jpg"></p></div>
+			</li>
+			<li>
+				<div class="rec-img"><p><img src="../images/001.jpg"></p></div>
+			</li>
+			<li>
+				<div class="rec-img"><p><img src="../images/001.jpg"></p></div>
+			</li>
+			<li>
+				<div class="rec-img"><p><img src="../images/001.jpg"></p></div>
+			</li>
+			<li>
+				<div class="rec-img"><p><img src="../images/001.jpg"></p></div>
+			</li>
+		</ul>
+		<a href="#" class="rec-more fr">更多》</a>
 	</div>
 </div>
+
 <!--bottom-->
-<div class="About Minwidth"></div>
-<div class="Footer Minwidth"></div>
+<div class="about minwidth"></div>
+<div class="footer minwidth"></div>
 
 <!--fix-->
-<div class="Fixed">
+<div class="fixed">
 	<a href="#">我选中的（N）</a>
 	<a href="#">切换瀑布流</a>
-	<a href="#">回到顶部</a>
+	<a id="returnTop" href="#">回到顶部</a>
 </div>
 
-<!--  -->
-	<script src="../js/common/jquery-1.10.2.min.js"></script>
-	<script src="../js/common/ejs.min.js"></script>
-	<script src="../js/common/util.js"></script>
-	<script src="../js/index.js"></script>
 </body>
 </html>
