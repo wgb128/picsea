@@ -154,3 +154,5 @@ function crawler(smallArrOfPage){
             })
     }))
 }
+
+console.log('test')
